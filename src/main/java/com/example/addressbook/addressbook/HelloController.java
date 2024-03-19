@@ -62,4 +62,10 @@ Elementum nibh tellus molestie nunc non blandit massa.""");
         Scene scene = new Scene(fxmlLoader.load(), HelloApplication.WIDTH, HelloApplication.HEIGHT);
         stage.setScene(scene);
     }
+
+    @FXML
+    protected void onCancelButtonClick() {
+        Stage stage = (Stage) nextButton.getScene().getWindow();
+        stage.close();
+    }
 }
